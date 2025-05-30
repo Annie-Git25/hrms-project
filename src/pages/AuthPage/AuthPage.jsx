@@ -26,7 +26,7 @@ const AuthPage = ({ setAuthSession }) => {
             if (data.user) {
                 // Fetch user role after successful login
                 const { data: profile, error: profileError } = await supabase
-                    .from('profiles') // Assuming you have a 'profiles' table with 'role'
+                    .from('profiles') 
                     .select('role')
                     .eq('id', data.user.id)
                     .single();

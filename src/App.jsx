@@ -75,9 +75,9 @@ function AppContent() {
                         element={
                             session ? (
                                 session.role === 'hr_admin' ? (
-                                    <Navigate to="/hr-admin-dashboard" replace />
+                                    <Navigate to="./HrAdminDashboard.jsx" replace />
                                 ) : (
-                                    <Navigate to="/employee-dashboard" replace />
+                                    <Navigate to="./EmployeeDashboard.jsx" replace />
                                 )
                             ) : (
                                 <AuthPage setAuthSession={setSession} />
@@ -85,17 +85,17 @@ function AppContent() {
                         }
                     />
                     <Route
-                        path="/employee-dashboard"
+                        path="./EmployeeDashboard.jsx"
                         element={
-                            <PrivateRoute allowedRoles={['employee', 'hr_admin']}> {/* HR can also see employee dashboard */}
+                            <PrivateRoute allowedRoles={['employee', 'hrAdmin']}> {/* HR can also see employee dashboard */}
                                 <EmployeeDashboard />
                             </PrivateRoute>
                         }
                     />
                     <Route
-                        path="/hr-admin-dashboard"
+                        path="./HrAdminDashboard.jsx"
                         element={
-                            <PrivateRoute allowedRoles={['hr_admin']}>
+                            <PrivateRoute allowedRoles={['hrAdmin']}>
                                 <HrAdminDashboard />
                             </PrivateRoute>
                         }

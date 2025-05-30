@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Annie-Git25.github.io/hrms-project/",
+  "homepage": "https://annie-git25.github.io/hrms-project/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

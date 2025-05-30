@@ -1,8 +1,8 @@
-//src/pages/LeaveManagement/LeaveRequestForm.js (Component for applying leave)
+//src/pages/LeaveManagement/LeaveRequestForm.jsx (Component for applying leave)
 
 import React, { useState } from 'react';
-import { supabase } from '../../services/supabaseClient';
-import styles from './LeaveRequestForm.module.css'; // Create this CSS module
+import { supabase } from '../../services/supabaseClient.js';
+//import styles from './LeaveRequestForm.module.css'; // Create this CSS module
 
 const LeaveRequestForm = ({ employeeId, onClose, onSuccess }) => {
     const [leaveType, setLeaveType] = useState('vacation');

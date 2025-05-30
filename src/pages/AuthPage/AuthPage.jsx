@@ -1,7 +1,7 @@
 //src/pages/AuthPage/AuthPage.js
 
 import React, { useState } from 'react';
-import { supabase } from '../../services/supabaseClient'; // Make sure this path is correct
+import { supabase } from '../../services/supabaseClient.js';
 import styles from './AuthPage.module.css';
 
 const AuthPage = ({ setAuthSession }) => {
@@ -78,13 +78,13 @@ const AuthPage = ({ setAuthSession }) => {
                     {loading ? 'Loading...' : (isLogin ? 'Login' : 'Sign Up')}
                 </button>
             </form>
-            {/* Optional: Toggle for Login/Sign Up if applicable for your HRMS */}
-            {/* <p>
+            {/*Toggle for Login/Sign Up*/}
+            <p>
                 {isLogin ? "Don't have an account?" : "Already have an account?"}{' '}
                 <span onClick={() => setIsLogin(!isLogin)} className={styles.toggleLink}>
                     {isLogin ? 'Sign Up' : 'Login'}
                 </span>
-            </p> */}
+            </p>
         </div>
     );
 };

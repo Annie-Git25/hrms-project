@@ -1,4 +1,4 @@
-//src/pages/Dashboard/HrAdminDashboard.js
+//src/pages/Dashboard/HrAdminDashboard.jsx
 
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../services/supabaseClient.js';

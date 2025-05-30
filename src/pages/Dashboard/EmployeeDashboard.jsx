@@ -1,9 +1,9 @@
-//src/pages/Dashboard/EmployeeDashboard.js
+//src/pages/Dashboard/EmployeeDashboard.jsx
 
 import React, { useState, useEffect, useContext } from 'react';
 import { supabase } from '../../services/supabaseClient.js';
-import { AuthContext } from '../../context/AuthContext.js'; 
-import LeaveRequestForm from '../LeaveManagement/LeaveRequestForm.js';
+import { AuthContext } from '../../context/AuthContext.jsx'; 
+import LeaveRequestForm from '../LeaveManagement/LeaveRequestForm.jsx';
 import styles from './EmployeeDashboard.module.css';
 
 const EmployeeDashboard = () => {

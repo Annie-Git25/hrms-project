@@ -2,10 +2,10 @@
 
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthContext, AuthProvider } from './context/AuthContext.js';
-import AuthPage from './pages/AuthPage/AuthPage.js';
-import EmployeeDashboard from './pages/Dashboard/EmployeeDashboard.js';
-import HrAdminDashboard from './pages/Dashboard/HrAdminDashboard.js';
+import { AuthContext, AuthProvider } from './context/AuthContext.jsx';
+import AuthPage from './pages/AuthPage/AuthPage.jsx';
+import EmployeeDashboard from './pages/Dashboard/EmployeeDashboard.jsx';
+import HrAdminDashboard from './pages/Dashboard/HrAdminDashboard.jsx';
 import './App.css'; // Global CSS for body/html
 
 // PrivateRoute component to protect routes based on authentication and role

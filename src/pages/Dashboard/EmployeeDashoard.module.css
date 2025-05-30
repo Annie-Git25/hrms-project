@@ -1,0 +1,104 @@
+/*src/pages/Dashboard/EmployeeDashboard.module.css (Example Styling)*/
+
+.dashboardContainer {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.applyLeaveButton {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.applyLeaveButton:hover {
+    background-color: #218838;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.card h3, .card h4 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.leaveBalances p {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.pendingApplicationsList {
+    list-style: none;
+    padding: 0;
+}
+
+.pendingApplicationItem {
+    background-color: #fff3cd; /* Light yellow for pending */
+    border-left: 5px solid #ffc107;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #664d03;
+}
+
+.loading, .error, .noData {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.error {
+    color: #dc3545;
+}
+
+/* Modal Styling for LeaveRequestForm */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}

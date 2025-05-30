@@ -1,0 +1,121 @@
+/*src/pages/Dashboard/HrAdminDashboard.module.css (Example Styling)*/
+
+.dashboardContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.card h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.chartContainer {
+    max-height: 400px;
+    margin-bottom: 20px;
+}
+
+.chartNote {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+}
+
+.leaveList {
+    list-style: none;
+    padding: 0;
+}
+
+.leaveItem {
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leaveItem p {
+    margin: 5px 0;
+    flex: 1 1 45%; /* Allows items to wrap */
+    color: #444;
+}
+
+.leaveItem p strong {
+    color: #333;
+}
+
+.leaveActions {
+    flex: 1 1 100%;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.approveButton, .rejectButton {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.approveButton {
+    background-color: #28a745;
+    color: white;
+}
+
+.approveButton:hover {
+    background-color: #218838;
+}
+
+.rejectButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.rejectButton:hover {
+    background-color: #c82333;
+}
+
+.approveButton:disabled, .rejectButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.loading, .error {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.error {
+    color: #dc3545;
+}
